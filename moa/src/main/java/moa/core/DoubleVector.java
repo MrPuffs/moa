@@ -50,14 +50,6 @@ public class DoubleVector extends AbstractMOAObject {
         return this.array.length;
     }
 
-    // new algorithme for LOG8371
-    public void addTwoToValue(int i) {
-        if (i >= this.array.length) {
-            setArrayLength(i + 1);
-        }
-        this.array[i] += 2;
-    }
-
     public void setValue(int i, double v) {
         if (i >= this.array.length) {
             setArrayLength(i + 1);
